@@ -1,0 +1,71 @@
+name: Page Development Tasks
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+  assign-tasks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign Tasks to Team Members
+        run: |
+          echo "Assigning tasks to team members:"
+          echo "1. Login Page development assigned to Khent."
+          echo "2. Register Page development assigned to Lordjie."
+          echo "3. Reset Password Page development assigned to Jommel."
+          echo "4. Forgot Password Page development assigned to Airiz."
+          echo ""
+          echo "Please refer to the Issues section for detailed requirements."
+          echo "Tasks should follow the project folder structure and coding standards."
+
+  login-page:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Login Page
+        run: |
+          echo "Task: Login Page assigned to Khent."
+          echo "Page should include fields for email and password with validation."
+          echo "Use the project theme and styling guidelines."
+
+  register-page:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Register Page
+        run: |
+          echo "Task: Register Page assigned to Lordjie."
+          echo "Page should include fields for first name, last name, email, and password with validation."
+          echo "Implement password strength check and show success message on submission."
+
+  reset-password-page:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Reset Password Page
+        run: |
+          echo "Task: Reset Password Page assigned to Jommel."
+          echo "Page should accept a reset token and allow users to set a new password."
+          echo "Ensure strong password validation and a user-friendly error/success message."
+
+  forgot-password-page:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Forgot Password Page
+        run: |
+          echo "Task: Forgot Password Page assigned to Airiz."
+          echo "Page should include an email field and send a reset password link."
+          echo "Show confirmation message on successful submission."
