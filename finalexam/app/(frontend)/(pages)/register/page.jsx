@@ -35,8 +35,8 @@ const Registration = () => {
         body: JSON.stringify({
           email: formData.email,
           password: formData.password,
-          firstname: formData.firstname,
-          lastname: formData.lastname,
+          firstName: formData.firstname,
+          lastName: formData.lastname,
         }),
       });
 

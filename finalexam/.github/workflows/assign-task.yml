@@ -42,6 +42,7 @@ jobs:
           echo "Task: Login Page assigned to Khent."
           echo "Page should include fields for email and password with validation."
           echo "Use the project theme and styling guidelines."
+          echo "DONE"
 
   register-page:
     runs-on: ubuntu-latest
@@ -60,6 +61,7 @@ jobs:
           echo "Task: Reset Password Page assigned to Jommel."
           echo "Page should accept a reset token and allow users to set a new password."
           echo "Ensure strong password validation and a user-friendly error/success message."
+          echo "DONE"
 
   forgot-password-page:
     runs-on: ubuntu-latest
