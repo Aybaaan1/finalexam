@@ -51,6 +51,8 @@ jobs:
           echo "Task: Register Page assigned to Lordjie."
           echo "Page should include fields for first name, last name, email, and password with validation."
           echo "Implement password strength check and show success message on submission."
+          echo "Done by Lordjie Lapas."
+          echo "DONE FORGOT and RESET PASSWORD"
 
   reset-password-page:
     runs-on: ubuntu-latest
