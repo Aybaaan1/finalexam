@@ -39,6 +39,7 @@ const SignIn = ({ setIsOpen }) => {
         console.log("Login failed", result.error);
       } else {
         setSuccess("Login successful!");
+        setTimeout(() => router.push("/todolist"), 3000);
         setError("");
         console.log("Login succeeded", result);
 
@@ -110,7 +111,7 @@ const SignIn = ({ setIsOpen }) => {
           </p>
           <p className="text-sm mt-2 text-center text-gray-600">
             Forgot your password?{" "}
-            <a href="/forgot-password" className="text-blue-600">
+            <a href="/forgotpass" className="text-blue-600">
               Reset it here
             </a>
           </p>
